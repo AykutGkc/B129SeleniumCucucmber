@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import techproed.pages.TechproPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 public class TechproStepDefinition {
 
@@ -32,5 +33,15 @@ public class TechproStepDefinition {
     @And("sayfa_basliginin_QA_icerdigini_Test_Eder")
     public void sayfa_basliginin_qa_icerdigini_test_eder() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("qa"));
+    }
+
+    @Given("kullanici_{string}_sayfasina_gider")
+    public void kullanici__sayfasina_gider(String url) {
+        Driver.getDriver().get(url);
+    }
+
+    @And("kullanici_tum_sayfanin_resmini_alir")
+    public void kullaniciTumSayfaninResminiAlir() {
+        ReusableMethods.fullScrennShot("Tüm_sayfa_Resmi");
     }
 }
