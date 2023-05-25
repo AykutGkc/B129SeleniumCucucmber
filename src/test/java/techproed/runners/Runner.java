@@ -13,11 +13,21 @@ Cucumber frameworkundede Runner class'indaki tags parametresi ile belirttigimiz 
 @RunWith(Cucumber.class)
 //Senaryolarin nerede ve nasil calisacagi, hangi raporu kullanacagi ile alakali secenekleri ayarlar.
 
-@CucumberOptions(features ="src/test/resources/features/day30_ilkFeature_070523",
+@CucumberOptions(   plugin={"pretty","html:src/test/resources/features/htmlReport/cucumbertc3.html",
+                                     "json:src/test/resources/features/htmlReport/cucumber.json",
+                                    "junit:src/test/resources/features/htmlReport/cucumber.xml"}, //plugin parametresi ile pretty ifadesi kullanilirsa konsolda scenario'lar ile bilgi gösterir.
+                    features ="src/test/resources/features/day30_ilkFeature_070523",
                     glue= {"techproed/stepDefinitions"}, //bu parametre ile kodllarimizi yazdigimiz step definition
                                                         //class'inin package'ini belirleriz
-                    tags = "@gr3 or @gr1")
-/*
+                    tags = "@tc3",
+                    dryRun = false, //dryRun=false TEst adimlarini kontrol eder ve browser'i calistirir.
+                                    //dryRun=True  Test adimlarini sadecei kontrol eder
+                                    //default olarak false'dur.
+                    monochrome=false // pretty ifadesinden sonra monochrome=true kullanirsak senaryo adimlarini tek renk siyah olarak gösterir
+                                    //monochrome=false kullanirsak renkli gösterir
+                                    //default false gelir.
+)
+ /*
 features ===> features'ların olduğu packega'ın yolunu ver(ContentRoot)
 glue ====> stepDefinition'ların olduğu packega'ın yolunu ver(Source Root)
 tags ====> çalıştırmak istediğin grubu yaz
