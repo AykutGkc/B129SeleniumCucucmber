@@ -1,3 +1,4 @@
+techproed/runners/FailedRun.class
 techproed/stepDefinitions/DataTableStepDefinition.class
 techproed/pages/BlueRentalPage.class
 techproed/utilities/ReusableMethods.class
@@ -6,6 +7,7 @@ techproed/stepDefinitions/GoogleStepDefinition.class
 techproed/pages/TechproPage.class
 techproed/stepDefinitions/Hooks.class
 techproed/pages/GooglePage.class
+techproed/utilities/ExcelUtils.class
 techproed/stepDefinitions/BlueRentalCatStepDefinitions.class
 techproed/stepDefinitions/TechproStepDefinition.class
 techproed/runners/Runner.class

@@ -9,7 +9,9 @@
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/pages/DataTablePage.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/stepDefinitions/DataTableStepDefinition.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/utilities/ConfigReader.java
+/Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/utilities/ExcelUtils.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/stepDefinitions/TechproStepDefinition.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/utilities/ReusableMethods.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/pages/BlueRentalPage.java
+/Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/runners/FailedRun.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/runners/Runner.java

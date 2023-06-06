@@ -15,11 +15,13 @@ Cucumber frameworkundede Runner class'indaki tags parametresi ile belirttigimiz 
 
 @CucumberOptions(   plugin={"pretty","html:src/test/resources/features/htmlReport/cucumberHooks.html",
                                      "json:src/test/resources/features/htmlReport/cucumber.json",
-                                    "junit:src/test/resources/features/htmlReport/cucumber.xml"}, //plugin parametresi ile pretty ifadesi kullanilirsa konsolda scenario'lar ile bilgi gösterir.
+                                    "junit:src/test/resources/features/htmlReport/cucumber.xml",
+                                    "rerun:TestOutput/failed_scenario.txt"}, //rerun->fail olan senaryolari belirtilen yoldaki txt dosya icinde gösterir.
+                    //plugin parametresi ile pretty ifadesi kullanilirsa konsolda scenario'lar ile bilgi gösterir.
                     features ="src/test/resources/features",
                     glue= {"techproed/stepDefinitions"}, //bu parametre ile kodllarimizi yazdigimiz step definition
                                                         //class'inin package'ini belirleriz
-                    tags = "@hooks",
+                    tags = "@rerun",
                     dryRun = false, //dryRun=false TEst adimlarini kontrol eder ve browser'i calistirir.
                                     //dryRun=True  Test adimlarini sadecei kontrol eder
                                     //default olarak false'dur.
