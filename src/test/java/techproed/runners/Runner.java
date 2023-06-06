@@ -13,13 +13,13 @@ Cucumber frameworkundede Runner class'indaki tags parametresi ile belirttigimiz 
 @RunWith(Cucumber.class)
 //Senaryolarin nerede ve nasil calisacagi, hangi raporu kullanacagi ile alakali secenekleri ayarlar.
 
-@CucumberOptions(   plugin={"pretty","html:src/test/resources/features/htmlReport/cucumbertc3.html",
+@CucumberOptions(   plugin={"pretty","html:src/test/resources/features/htmlReport/cucumberHooks.html",
                                      "json:src/test/resources/features/htmlReport/cucumber.json",
                                     "junit:src/test/resources/features/htmlReport/cucumber.xml"}, //plugin parametresi ile pretty ifadesi kullanilirsa konsolda scenario'lar ile bilgi gösterir.
-                    features ="src/test/resources/features/day30_ilkFeature_070523",
+                    features ="src/test/resources/features",
                     glue= {"techproed/stepDefinitions"}, //bu parametre ile kodllarimizi yazdigimiz step definition
                                                         //class'inin package'ini belirleriz
-                    tags = "@tc3",
+                    tags = "@hooks",
                     dryRun = false, //dryRun=false TEst adimlarini kontrol eder ve browser'i calistirir.
                                     //dryRun=True  Test adimlarini sadecei kontrol eder
                                     //default olarak false'dur.

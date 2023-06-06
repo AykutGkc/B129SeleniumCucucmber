@@ -4,6 +4,7 @@ techproed/utilities/ReusableMethods.class
 techproed/pages/DataTablePage.class
 techproed/stepDefinitions/GoogleStepDefinition.class
 techproed/pages/TechproPage.class
+techproed/stepDefinitions/Hooks.class
 techproed/pages/GooglePage.class
 techproed/stepDefinitions/BlueRentalCatStepDefinitions.class
 techproed/stepDefinitions/TechproStepDefinition.class
