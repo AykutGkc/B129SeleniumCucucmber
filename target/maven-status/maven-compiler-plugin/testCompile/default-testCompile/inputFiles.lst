@@ -3,6 +3,7 @@
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/pages/GooglePage.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/utilities/Driver.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/pages/TechproPage.java
+/Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/runners/Runner2.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/stepDefinitions/BlueRentalCatStepDefinitions.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/pages/AmazonPage.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/stepDefinitions/Hooks.java
@@ -10,6 +11,7 @@
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/stepDefinitions/DataTableStepDefinition.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/utilities/ConfigReader.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/utilities/ExcelUtils.java
+/Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/runners/Runner1.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/stepDefinitions/TechproStepDefinition.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/utilities/ReusableMethods.java
 /Users/aykutgkc/IdeaProjects/B129SeleniumCucucmber/src/test/java/techproed/pages/BlueRentalPage.java

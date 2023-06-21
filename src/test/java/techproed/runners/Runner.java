@@ -14,14 +14,16 @@ Cucumber frameworkundede Runner class'indaki tags parametresi ile belirttigimiz 
 //Senaryolarin nerede ve nasil calisacagi, hangi raporu kullanacagi ile alakali secenekleri ayarlar.
 
 @CucumberOptions(   plugin={"pretty","html:src/test/resources/features/htmlReport/cucumberHooks.html",
-                                     "json:src/test/resources/features/htmlReport/cucumber.json",
+                                     "json:target/json-reports/cucumber1.json",
                                     "junit:src/test/resources/features/htmlReport/cucumber.xml",
-                                    "rerun:TestOutput/failed_scenario.txt"}, //rerun->fail olan senaryolari belirtilen yoldaki txt dosya icinde gösterir.
+                                    "rerun:TestOutput/failed_scenario.txt",
+        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+                    //rerun->fail olan senaryolari belirtilen yoldaki txt dosya icinde gösterir.
                     //plugin parametresi ile pretty ifadesi kullanilirsa konsolda scenario'lar ile bilgi gösterir.
                     features ="src/test/resources/features",
                     glue= {"techproed/stepDefinitions"}, //bu parametre ile kodllarimizi yazdigimiz step definition
                                                         //class'inin package'ini belirleriz
-                    tags = "@rerun",
+                    tags = "@techpro1",
                     dryRun = false, //dryRun=false TEst adimlarini kontrol eder ve browser'i calistirir.
                                     //dryRun=True  Test adimlarini sadecei kontrol eder
                                     //default olarak false'dur.
